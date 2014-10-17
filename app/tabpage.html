@@ -1,0 +1,72 @@
+<html>
+<head>
+    <!-- build:css styles/style.css -->
+	<link href='styles/style.css' rel='stylesheet' type='text/css'>
+    <!-- endbuild -->
+    
+</head>
+<body>
+	<div class="container">
+        <div id="widgets">
+            <div id="weather_widget">
+            </div>
+
+            <div id="todo_widget">
+                <section id="todoapp">
+                    <header id="header">
+                        <h1>Tasks</h1>
+                        <input id="new-todo" placeholder="What needs to be done?" autofocus>
+                    </header>
+                    <section id="main">
+                        <ul id="todo-list"></ul>
+                    </section>
+                </section>
+            </div>
+            
+            <div id="reminder_widget">
+                <section id="reminderapp">
+                    <header id="header">
+                        <h1>Reminders</h1>
+                        <input id="new-reminder" placeholder="Create a reminder" autofocus>
+                        <input id="new-reminder-when" type="date" autofocus>
+                    </header>
+                    <section id="main">
+                        <ul id="reminder-list"></ul>
+                    </section>
+                </section>
+            </div>
+            
+            <div id="productivity_widget"></div>
+        </div>
+	</div>
+    
+     <!-- Libraries -->
+     <!-- build:js scripts/libraries.js -->
+    <script src="bower_components/todomvc-common/base.js"></script>
+    <script src="bower_components/jquery/jquery.min.js"></script>
+    <script src="bower_components/underscore/underscore.js"></script>
+    <script src="bower_components/backbone/backbone.js"></script>
+    <script src="bower_components/backbone.localStorage/backbone.localStorage-min.js"></script>
+    <script src="bower_components/handlebars/handlebars.runtime.min.js"></script>
+    <!-- endbuild -->
+
+    <!-- App -->
+    <!-- build:js scripts/tabpage.js -->
+    <script type='text/javascript' src="scripts/tabpage.js"> </script>
+    <script type='text/javascript' src="scripts/models/todo.js"></script>
+    <script type='text/javascript' src="scripts/collections/todos.js"></script>
+    <script type='text/javascript' src="scripts/models/weather.js"></script>
+	<script type='text/javascript' src="scripts/models/reminder.js"></script>
+    <script type='text/javascript' src="scripts/collections/reminders.js"></script>
+    <script type='text/javascript' src="scripts/views/template-helper.js"></script>
+    <script type='text/javascript' src="scripts/templates.js"></script>
+    <script type='text/javascript' src="scripts/views/todo-view.js"></script>
+    <script type='text/javascript' src="scripts/views/app-view.js"></script>
+    <script type='text/javascript' src="scripts/views/weather-view.js"></script>
+    <script type='text/javascript' src="scripts/views/reminder-view.js"></script>
+    <script type='text/javascript' src="scripts/views/reminder-list-view.js"></script>
+    <script type='text/javascript' src="scripts/routers/router.js"></script>
+    <script type='text/javascript' src="scripts/app.js"></script>
+    <!-- endbuild -->
+</body>
+</html>
